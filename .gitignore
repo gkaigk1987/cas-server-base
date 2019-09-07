@@ -5,3 +5,5 @@
 /.settings/
 /target/
 src/main/resources/rebel.xml
+.idea/
+overlays/

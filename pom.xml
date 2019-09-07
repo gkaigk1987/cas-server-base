@@ -72,6 +72,7 @@
 		<!-- app.server could be -jetty, -undertow, -tomcat, or blank if you plan 
 			to provide appserver -->
 		<app.server>-tomcat</app.server>
+		<shiro.version>1.4.1</shiro.version>
 
 		<mainClassName>org.springframework.boot.loader.WarLauncher</mainClassName>
 		<isExecutable>false</isExecutable>
@@ -134,6 +135,11 @@
 				    <groupId>org.apereo.cas</groupId>
 				    <artifactId>cas-server-support-jdbc-drivers</artifactId>
 				    <version>${cas.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.shiro</groupId>
+					<artifactId>shiro-core</artifactId>
+					<version>${shiro.version}</version>
 				</dependency>
 				<dependency>
 				    <groupId>mysql</groupId>
